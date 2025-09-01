@@ -74,4 +74,14 @@
   h1 {
     font-size: 1.7rem;
   }
+  .input-wrapper input {
+    padding: 10px;
+  }
+  .input-wrapper button {
+    padding: 6px;
+  }
+  .input-wrapper {
+    position: relative;
+    left: -25px;
+  }
 }
