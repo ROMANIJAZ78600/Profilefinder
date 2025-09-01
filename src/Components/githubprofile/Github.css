@@ -1,0 +1,68 @@
+.github-profile-container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-wrapper input {
+  width: 100%;
+  border: 2px solid rgb(27, 223, 27);
+  background: transparent;
+  border-radius: 50px;
+}
+.input-wrapper input:hover {
+  outline: none;
+}
+.input-wrapper input::placeholder {
+  color: white;
+  background: transparent;
+}
+.input-wrapper button {
+  width: 100%;
+  margin-left: 8px;
+  position: relative;
+  top: -15px;
+  background: crimson;
+  border-radius: 20px;
+}
+.user {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 1rem 5rem;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+}
+.user img {
+  width: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.user img:hover {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.user a {
+  text-decoration: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 850px) {
+  .github-profile-container {
+    display: grid;
+    flex-direction: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .user {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+  }
+}
